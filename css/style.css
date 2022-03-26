@@ -35,12 +35,46 @@ h1{
   color: black;
 }
 .header__main{
-  margin: auto;
-  margin-top: 40px;
+  margin: 40px auto;
   width: 70%;
   text-align: center;
 }
 .header__main h2{
   font-family: var(--fuente-header);
   margin-bottom: 10px;
+}
+/* IMG */
+img{
+  width: 100%;
+  max-width: 600px;
+}
+/* HR */
+hr{
+  width: 90%;
+  margin: auto;
+  margin-bottom:25px;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 10px auto;
+}
+.contenedor{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.button__uno{
+  width: 120px;
+}
+.button__dos{
+  width: 120px;
+}
+@media (min-width: 700px){
+  h1{
+    color: red;
+  }
 }
