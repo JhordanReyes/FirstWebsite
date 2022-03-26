@@ -5,9 +5,13 @@
 }
 :root{
   --color-primario: #A0FFA2;
+  --color-footer: #649464;
   --fuente-header: 'Roboto', sans-serif;
   --fuente-text:'Lato', sans-serif;
- }
+}
+html{
+  scroll-behavior: smooth;
+}
 body{
    font-family: var(--fuente-text);
 }
@@ -59,7 +63,7 @@ hr{
   flex-direction: column;
   gap: 20px;
   width: 90%;
-  margin: 10px auto;
+  margin: 90px auto;
 }
 .contenedor{
   text-align: center;
@@ -73,8 +77,74 @@ hr{
 .button__dos{
   width: 120px;
 }
+
+/* FOOTER */
+
+footer{
+  position: relative;
+  margin-top: 150px;
+  background-color: var(--color-footer);
+}
+.footer{ 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+}
+.wave{
+  position: absolute;
+  width: 100%;
+  bottom: 99%;
+}
+.information{
+  max-width: 320px;
+}
+.information h2{
+  margin-bottom: 15px;
+}
+.information p{
+  line-height: 1.5;
+}
+.tres{
+  margin: 10px;
+  width: 100px;
+}
+.conocimientos{
+  max-width: 100px;
+}
+.conocimientos h2{
+  margin-bottom: 15px;
+}
+.conocimientos ul li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+#contacto{
+  margin: 20px auto;
+  font-size: 25px;
+}
+.facebook{
+  color: white;
+  margin-right: 10px;
+}
+.youtube{
+  color: white;
+  margin-right: 10px;
+}
+.telefono{
+  color: white;
+}
+
+/* MEDIA QUERIS */
 @media (min-width: 700px){
-  h1{
-    color: red;
+  .article__uno{
+    flex-direction: row;
+  }
+  .article__dos{
+    flex-direction: row-reverse;
+  }
+  .footer{
+    flex-direction: row;
   }
 }
