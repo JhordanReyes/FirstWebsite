@@ -61,11 +61,13 @@ hr{
 .article{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   width: 90%;
   margin: 90px auto;
 }
 .contenedor{
+  max-width: 700px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -98,7 +100,7 @@ footer{
   bottom: 99%;
 }
 .information{
-  max-width: 320px;
+  max-width: 400px;
 }
 .information h2{
   margin-bottom: 15px;
@@ -111,7 +113,7 @@ footer{
   width: 100px;
 }
 .conocimientos{
-  max-width: 100px;
+  max-width: 200px;
 }
 .conocimientos h2{
   margin-bottom: 15px;
@@ -146,5 +148,9 @@ footer{
   }
   .footer{
     flex-direction: row;
+  }
+  .conocimientos{
+    text-align: center;
+    margin-left: 70px;
   }
 }
